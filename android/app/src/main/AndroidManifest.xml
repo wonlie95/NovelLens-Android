@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 联网翻译、查词和电子书解析组件需要网络访问。 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Android 11 及以上需要声明才能发现系统语音引擎。 -->
+    <queries><intent><action android:name="android.intent.action.TTS_SERVICE" /></intent></queries>
+    <application
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher"
+        android:label="小说伴读"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="false">
+        <activity android:name=".MainActivity" android:screenOrientation="unspecified" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

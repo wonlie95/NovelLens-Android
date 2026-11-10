@@ -1,0 +1,7 @@
+# 本机 SDK 配置、构建产物和 Android 签名密钥不进入公开仓库。
+.gradle/
+**/build/
+local.properties
+*.p12
+*.jks
+*.keystore

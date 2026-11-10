@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.novellens.reader'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.novellens.reader'
+        minSdk 26
+        targetSdk 35
+        versionCode 11
+        versionName '1.11.0'
+    }
+
+    sourceSets { main.assets.srcDirs = ['../../shared'] }
+    lint { checkReleaseBuilds false }
+}

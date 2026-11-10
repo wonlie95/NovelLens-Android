@@ -1,0 +1,7 @@
+/* 原文与注音分开选择；行距为平假名留出空间，不改变下一行译文的布局。 */
+.jp:has(.jp-ruby){line-height:2.6}
+.jp-ruby{ruby-position:over;ruby-align:center}
+.jp-ruby rt{font-family:NovelLensJP,'Yu Gothic',sans-serif;font-size:.55em;font-weight:400;color:#8d5a40;line-height:1.25;letter-spacing:0;user-select:none;-webkit-user-select:none}
+.jp-ruby rb{user-select:text;-webkit-user-select:text}
+#furiganaBtn[aria-pressed=true]{background:#eee2ce;border-color:#c4a97f}
+header{height:auto;min-height:68px;flex-wrap:wrap}
